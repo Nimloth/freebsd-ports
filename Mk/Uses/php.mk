@@ -102,7 +102,10 @@ DEFAULT_PHP_VER?=	${PHP_DEFAULT:S/.//}
 # When adding a version, please keep the comment in
 # Mk/bsd.default-versions.mk in sync.
 PHP_VER?=	${DEFAULT_PHP_VER}
-.    if ${PHP_VER} == 70
+.    if ${PHP_VER} == 71
+PHP_EXT_DIR=   20160303
+PHP_EXT_INC=    pcre spl
+.    elif ${PHP_VER} == 70
 PHP_EXT_DIR=   20151012
 PHP_EXT_INC=    pcre spl
 .    elif ${PHP_VER} == 56

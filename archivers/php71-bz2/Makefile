@@ -1,10 +1,10 @@
 # Created by: Torsten Zuehlsdorff <tz@FreeBSD.org>
 # $FreeBSD$
 
-CATEGORIES=	databases
+CATEGORIES=	archivers
 
 MASTERDIR=	${.CURDIR}/../../lang/php71
 
-PKGNAMESUFFIX=	-pgsql
+PKGNAMESUFFIX=	-bz2
 
 .include "${MASTERDIR}/Makefile"

@@ -119,20 +119,6 @@ PLIST_SUB+=	SAPI_INC=""
 PLIST_SUB+=	SAPI_INC="@comment "
 .endif
 
-.if !defined(WITH_REGEX_TYPE) || ${WITH_REGEX_TYPE} == "php"
-CONFIGURE_ARGS+=--with-regex=php
-.elif defined(WITH_REGEX_TYPE) && ${WITH_REGEX_TYPE} == "system"
-CONFIGURE_ARGS+=--with-regex=system
-.endif
-
-.if !defined(WITH_ZEND_VM) || ${WITH_ZEND_VM} == "CALL"
-CONFIGURE_ARGS+=--with-zend-vm=CALL
-.elif defined(WITH_ZEND_VM) && ${WITH_ZEND_VM} == "SWITCH"
-CONFIGURE_ARGS+=--with-zend-vm=SWITCH
-.elif defined(WITH_ZEND_VM) && ${WITH_ZEND_VM} == "GOTO"
-CONFIGURE_ARGS+=--with-zend-vm=GOTO
-.endif
-
 CONFIGURE_ENV+=	ac_cv_decimal_fp_supported="no" \
 		lt_cv_path_SED="sed"
 
