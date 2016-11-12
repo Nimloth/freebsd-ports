@@ -541,7 +541,6 @@
     SUBDIR += linux-c6-glx-utils
     SUBDIR += linux-c6-jasper
     SUBDIR += linux-c6-jpeg
-    SUBDIR += linux-c6-libGLU
     SUBDIR += linux-c6-png
     SUBDIR += linux-c6-sdl_image
     SUBDIR += linux-c6-sdl_ttf
@@ -550,10 +549,10 @@
     SUBDIR += linux-c7-dri
     SUBDIR += linux-c7-gdk-pixbuf2
     SUBDIR += linux-c7-glx-utils
+    SUBDIR += linux-c7-graphite2
     SUBDIR += linux-c7-jasper
     SUBDIR += linux-c7-jbigkit
     SUBDIR += linux-c7-jpeg
-    SUBDIR += linux-c7-libGLU
     SUBDIR += linux-c7-png
     SUBDIR += linux-c7-sdl_image
     SUBDIR += linux-c7-sdl_ttf

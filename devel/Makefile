@@ -464,6 +464,7 @@
     SUBDIR += elixir-exjsx
     SUBDIR += elixir-exprotobuf
     SUBDIR += elixir-exrm
+    SUBDIR += elixir-gen_state_machine
     SUBDIR += elixir-gettext
     SUBDIR += elixir-hex
     SUBDIR += elixir-inflex
@@ -811,6 +812,7 @@
     SUBDIR += gwenhywfar-fox16
     SUBDIR += gwenhywfar-gtk2
     SUBDIR += gwenhywfar-qt4
+    SUBDIR += gwenhywfar-qt5
     SUBDIR += gzstream
     SUBDIR += hachoir-core
     SUBDIR += hachoir-parser
@@ -1202,7 +1204,6 @@
     SUBDIR += libcxxrt
     SUBDIR += libdaemon
     SUBDIR += libdap
-    SUBDIR += libdasm
     SUBDIR += libdatrie
     SUBDIR += libdbusmenu
     SUBDIR += libdbusmenu-qt
@@ -1239,6 +1240,8 @@
     SUBDIR += libewf
     SUBDIR += libexecinfo
     SUBDIR += libexplain
+    SUBDIR += libfaketime
+    SUBDIR += libfastcommon
     SUBDIR += libfastjson
     SUBDIR += libffi
     SUBDIR += libfirm
@@ -1401,6 +1404,7 @@
     SUBDIR += libtifiles2
     SUBDIR += libtool
     SUBDIR += libtpl
+    SUBDIR += libtuntap
     SUBDIR += libublio
     SUBDIR += libukcprog
     SUBDIR += libunicode
@@ -1435,6 +1439,7 @@
     SUBDIR += linux-c6-dbus-glib
     SUBDIR += linux-c6-dbus-libs
     SUBDIR += linux-c6-devtools
+    SUBDIR += linux-c6-libelf
     SUBDIR += linux-c6-libgfortran
     SUBDIR += linux-c6-libglade2
     SUBDIR += linux-c6-libpciaccess
@@ -1447,6 +1452,7 @@
     SUBDIR += linux-c7-dbus-glib
     SUBDIR += linux-c7-dbus-libs
     SUBDIR += linux-c7-devtools
+    SUBDIR += linux-c7-libelf
     SUBDIR += linux-c7-libgfortran
     SUBDIR += linux-c7-libglade2
     SUBDIR += linux-c7-libpciaccess
@@ -1604,6 +1610,7 @@
     SUBDIR += newfile
     SUBDIR += newt
     SUBDIR += newtonsoft-json
+    SUBDIR += nexus2-oss
     SUBDIR += nglogc
     SUBDIR += nini
     SUBDIR += ninja
@@ -2006,6 +2013,7 @@
     SUBDIR += p5-ConfigReader
     SUBDIR += p5-ConfigReader-Simple
     SUBDIR += p5-Connector
+    SUBDIR += p5-Const-Exporter
     SUBDIR += p5-Const-Fast
     SUBDIR += p5-Context-Preserve
     SUBDIR += p5-Contextual-Return
@@ -2547,6 +2555,7 @@
     SUBDIR += p5-IPC-System-Simple
     SUBDIR += p5-Import-Base
     SUBDIR += p5-Import-Into
+    SUBDIR += p5-Importer
     SUBDIR += p5-Inline
     SUBDIR += p5-Inline-ASM
     SUBDIR += p5-Inline-C
@@ -3272,7 +3281,6 @@
     SUBDIR += p5-Test-Distribution
     SUBDIR += p5-Test-EOL
     SUBDIR += p5-Test-Exception
-    SUBDIR += p5-Test-Exception-LessClever
     SUBDIR += p5-Test-Expect
     SUBDIR += p5-Test-FailWarnings
     SUBDIR += p5-Test-Fake-HTTPD
@@ -4013,11 +4021,14 @@
     SUBDIR += py-aspyct
     SUBDIR += py-astroid
     SUBDIR += py-asyncio
+    SUBDIR += py-atomiclong
     SUBDIR += py-atomicwrites
     SUBDIR += py-attrs
+    SUBDIR += py-automaton
     SUBDIR += py-avro
     SUBDIR += py-babel
     SUBDIR += py-babelfish
+    SUBDIR += py-backports.functools_lru_cache
     SUBDIR += py-backports.shutil_get_terminal_size
     SUBDIR += py-backports_abc
     SUBDIR += py-bandit
@@ -4038,6 +4049,7 @@
     SUBDIR += py-calendar
     SUBDIR += py-canonicaljson
     SUBDIR += py-capstone
+    SUBDIR += py-castellan
     SUBDIR += py-cclib
     SUBDIR += py-celery
     SUBDIR += py-cffi
@@ -4081,6 +4093,7 @@
     SUBDIR += py-crcmod
     SUBDIR += py-ctags
     SUBDIR += py-cuisine
+    SUBDIR += py-cursive
     SUBDIR += py-curtsies
     SUBDIR += py-cxx
     SUBDIR += py-cycler
@@ -4129,6 +4142,7 @@
     SUBDIR += py-extremes
     SUBDIR += py-ezpyinline
     SUBDIR += py-fabric
+    SUBDIR += py-fabric3
     SUBDIR += py-fake-factory
     SUBDIR += py-fam
     SUBDIR += py-fasteners
@@ -4156,6 +4170,7 @@
     SUBDIR += py-funcsigs
     SUBDIR += py-functools32
     SUBDIR += py-fusefs
+    SUBDIR += py-fusepy
     SUBDIR += py-future
     SUBDIR += py-futures
     SUBDIR += py-futurist
@@ -4174,6 +4189,7 @@
     SUBDIR += py-gitless
     SUBDIR += py-gitosis
     SUBDIR += py-gitpython
+    SUBDIR += py-glance-store
     SUBDIR += py-glob2
     SUBDIR += py-gobject
     SUBDIR += py-gobject3
@@ -4198,6 +4214,7 @@
     SUBDIR += py-instant
     SUBDIR += py-interface
     SUBDIR += py-intervaltree
+    SUBDIR += py-invoke
     SUBDIR += py-ioflo
     SUBDIR += py-ipaddr
     SUBDIR += py-ipdb
@@ -4377,7 +4394,6 @@
     SUBDIR += py-pycerberus
     SUBDIR += py-pycmd
     SUBDIR += py-pycparser
-    SUBDIR += py-pydasm
     SUBDIR += py-pydenticon
     SUBDIR += py-pydoop
     SUBDIR += py-pyechonest
@@ -4407,6 +4423,7 @@
     SUBDIR += py-pyrfc3339
     SUBDIR += py-pyro
     SUBDIR += py-pyshapelib
+    SUBDIR += py-pystorm
     SUBDIR += py-pyte
     SUBDIR += py-pytemplate
     SUBDIR += py-pytest
@@ -4493,6 +4510,8 @@
     SUBDIR += py-roxlib
     SUBDIR += py-rq
     SUBDIR += py-rtree
+    SUBDIR += py-ruamel.ordereddict
+    SUBDIR += py-ruamel.yaml
     SUBDIR += py-ruledispatch
     SUBDIR += py-sanetime
     SUBDIR += py-sarge
@@ -4525,8 +4544,6 @@
     SUBDIR += py-sip
     SUBDIR += py-six
     SUBDIR += py-smmap
-    SUBDIR += py-snack
-    SUBDIR += py-snackwich
     SUBDIR += py-sortedcontainers
     SUBDIR += py-sourcemap
     SUBDIR += py-spark
@@ -4538,6 +4555,7 @@
     SUBDIR += py-stdnum
     SUBDIR += py-stevedore
     SUBDIR += py-stopit
+    SUBDIR += py-streamparse
     SUBDIR += py-structlog
     SUBDIR += py-stsci.distutils
     SUBDIR += py-subversion
@@ -4549,6 +4567,7 @@
     SUBDIR += py-tabulate
     SUBDIR += py-tapi
     SUBDIR += py-tarantool-queue
+    SUBDIR += py-taskflow
     SUBDIR += py-tblib
     SUBDIR += py-tconfpy
     SUBDIR += py-tempora
@@ -4561,6 +4580,7 @@
     SUBDIR += py-testtools
     SUBDIR += py-tgMochiKit
     SUBDIR += py-thrift
+    SUBDIR += py-thriftpy
     SUBDIR += py-timelib
     SUBDIR += py-tinyarray
     SUBDIR += py-tipper
@@ -4621,6 +4641,7 @@
     SUBDIR += py-wsgi_xmlrpc
     SUBDIR += py-wsgitools
     SUBDIR += py-wsgiutils
+    SUBDIR += py-wsme
     SUBDIR += py-xattr
     SUBDIR += py-xcaplib
     SUBDIR += py-xdg
@@ -4641,6 +4662,7 @@
     SUBDIR += py-z3c.formwidget.query
     SUBDIR += py-z3c.zcmlhook
     SUBDIR += py-zExceptions
+    SUBDIR += py-zkpython
     SUBDIR += py-zLOG
     SUBDIR += py-zc.buildout
     SUBDIR += py-zclockfile
@@ -4862,7 +4884,6 @@
     SUBDIR += ruby-intl
     SUBDIR += ruby-korundum
     SUBDIR += ruby-krossruby
-    SUBDIR += ruby-langscan
     SUBDIR += ruby-locale
     SUBDIR += ruby-ncurses
     SUBDIR += ruby-property
@@ -5042,8 +5063,10 @@
     SUBDIR += rubygem-forwardable-extended
     SUBDIR += rubygem-gdata
     SUBDIR += rubygem-gem_plugin
+    SUBDIR += rubygem-gem-compare
     SUBDIR += rubygem-gemcutter
     SUBDIR += rubygem-gemnasium-gitlab-service
+    SUBDIR += rubygem-gemnasium-parser
     SUBDIR += rubygem-gems
     SUBDIR += rubygem-generator_spec
     SUBDIR += rubygem-generator_spec-rails4
@@ -5130,6 +5153,7 @@
     SUBDIR += rubygem-metaid
     SUBDIR += rubygem-metasm
     SUBDIR += rubygem-method_source
+    SUBDIR += rubygem-micromachine
     SUBDIR += rubygem-minitest
     SUBDIR += rubygem-minitest4
     SUBDIR += rubygem-mixlib-authentication

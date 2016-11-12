@@ -30,6 +30,7 @@
     SUBDIR += bottlerocket
     SUBDIR += boxes
     SUBDIR += brs
+    SUBDIR += bsod
     SUBDIR += buffer
     SUBDIR += cave
     SUBDIR += cdcollect
@@ -370,6 +371,7 @@
     SUBDIR += proxyper
     SUBDIR += pspresent
     SUBDIR += py-YABT
+    SUBDIR += py-glance
     SUBDIR += py-osd
     SUBDIR += py-pexpect
     SUBDIR += py-powerline-status

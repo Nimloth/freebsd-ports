@@ -75,6 +75,7 @@
     SUBDIR += cnd
     SUBDIR += coda6_client
     SUBDIR += coda6_server
+    SUBDIR += concourse-fly
     SUBDIR += corkscrew
     SUBDIR += corosync
     SUBDIR += courier-authlib-ldap
@@ -683,7 +684,6 @@
     SUBDIR += p5-Net-Patricia
     SUBDIR += p5-Net-Pcap
     SUBDIR += p5-Net-PcapUtils
-    SUBDIR += p5-Net-Ping
     SUBDIR += p5-Net-Ping-External
     SUBDIR += p5-Net-Proxy
     SUBDIR += p5-Net-PubSubHubbub-Publisher
@@ -1000,6 +1000,7 @@
     SUBDIR += py-oauth2
     SUBDIR += py-openstackclient
     SUBDIR += py-paho-mqtt
+    SUBDIR += py-pamqp
     SUBDIR += py-pcap
     SUBDIR += py-pcapy
     SUBDIR += py-pcs
@@ -1021,6 +1022,7 @@
     SUBDIR += py-pyzmq
     SUBDIR += py-qt4-network
     SUBDIR += py-qt5-network
+    SUBDIR += py-rabbitpy
     SUBDIR += py-radix
     SUBDIR += py-raet
     SUBDIR += py-rainbowstream
@@ -1086,7 +1088,6 @@
     SUBDIR += relayd
     SUBDIR += remmina
     SUBDIR += remmina-plugin-gnome
-    SUBDIR += remmina-plugin-i18n
     SUBDIR += remmina-plugin-nx
     SUBDIR += remmina-plugin-telepathy
     SUBDIR += remmina-plugin-vnc

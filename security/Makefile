@@ -36,6 +36,7 @@
     SUBDIR += bcrypt
     SUBDIR += bcwipe
     SUBDIR += bdc
+    SUBDIR += bearssl
     SUBDIR += beecrypt
     SUBDIR += belier
     SUBDIR += bfbtester
@@ -123,8 +124,8 @@
     SUBDIR += elixir-comeonin
     SUBDIR += elixir-comeonin_i18n
     SUBDIR += elixir-jose
+    SUBDIR += erlang-fast_tls
     SUBDIR += erlang-jose
-    SUBDIR += erlang-p1tls
     SUBDIR += eschalot
     SUBDIR += esteidfirefoxplugin
     SUBDIR += expiretable
@@ -365,7 +366,6 @@
     SUBDIR += lockdown
     SUBDIR += log2timeline
     SUBDIR += logcheck
-    SUBDIR += lsh
     SUBDIR += luasec
     SUBDIR += lynis
     SUBDIR += mac-robber
@@ -374,7 +374,6 @@
     SUBDIR += makepasswd
     SUBDIR += manipulate_data
     SUBDIR += masscan
-    SUBDIR += massh
     SUBDIR += matrixssl
     SUBDIR += mbedtls
     SUBDIR += mcrypt
@@ -418,6 +417,7 @@
     SUBDIR += openconnect
     SUBDIR += opencryptoki
     SUBDIR += openct
+    SUBDIR += openiked
     SUBDIR += opensaml2
     SUBDIR += opensc
     SUBDIR += openscep
@@ -871,10 +871,12 @@
     SUBDIR += py-maec
     SUBDIR += py-mcrypt
     SUBDIR += py-mhash
+    SUBDIR += py-mixbox
     SUBDIR += py-oauth2client
     SUBDIR += py-oauthlib
     SUBDIR += py-openssl
     SUBDIR += py-paramiko
+    SUBDIR += py-paramiko1
     SUBDIR += py-passlib
     SUBDIR += py-pbkdf2
     SUBDIR += py-pgpdump
