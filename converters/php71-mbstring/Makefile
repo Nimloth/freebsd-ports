@@ -1,4 +1,3 @@
-# Created by: Torsten Zuehlsdorff <tz@FreeBSD.org>
 # $FreeBSD$
 
 CATEGORIES=	converters
