@@ -301,9 +301,12 @@ _USE_PHP_ALL=	bcmath bitset bz2 calendar ctype curl dba dom \
 # version specific components
 _USE_PHP_VER56=	${_USE_PHP_ALL} mssql mysql sybase_ct
 _USE_PHP_VER70=	${_USE_PHP_ALL}
+_USE_PHP_VER71=	${_USE_PHP_ALL}
 
 bcmath_DEPENDS=	math/php${PHP_VER}-bcmath
-.    if ${PHP_VER} == 70
+.    if ${PHP_VER} == 71
+bitset_DEPENDS= math/pecl-bitset
+.    elif ${PHP_VER} == 70
 bitset_DEPENDS=	math/pecl-bitset
 .    else
 bitset_DEPENDS=	math/pecl-bitset2
@@ -328,7 +331,9 @@ iconv_DEPENDS=	converters/php${PHP_VER}-iconv
 igbinary_DEPENDS=	converters/pecl-igbinary
 imap_DEPENDS=	mail/php${PHP_VER}-imap
 interbase_DEPENDS=	databases/php${PHP_VER}-interbase
-.    if ${PHP_VER} == 70
+.    if ${PHP_VER} == 71
+intl_DEPENDS=   devel/php${PHP_VER}-intl
+.    elif ${PHP_VER} == 70
 intl_DEPENDS=	devel/php${PHP_VER}-intl
 .    else
 intl_DEPENDS=	devel/pecl-intl
