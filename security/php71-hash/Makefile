@@ -1,4 +1,3 @@
-# Created by: Alex Dupre <ale@FreeBSD.org>
 # $FreeBSD$
 
 CATEGORIES=	security
