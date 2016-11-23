@@ -2,7 +2,7 @@
 
 PORTNAME=	uhd
 PORTVERSION=	3.9.5
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	comms hamradio
 MASTER_SITES=	http://files.ettus.com/binaries/images/
 DISTFILES=	${IMAGE_FILE}
@@ -24,11 +24,13 @@ BUILD_DEPENDS=	${LOCALBASE}/include/boost/tuple/tuple.hpp:devel/boost-libs \
 		orcc:devel/orc \
 		${PYTHON_PKGNAMEPREFIX}mako>0:textproc/py-mako
 
-USES=			compiler:c++0x cmake:outsource gmake pkgconfig dos2unix python:2.7
+USES=		compiler:c++0x cmake:outsource gmake ncurses pkgconfig \
+		dos2unix python:2.7
 USE_LDCONFIG=		yes
 CMAKE_SOURCE_PATH=	${WRKSRC}/host
 #MAKE_JOBS_UNSAFE=	yes
-CXXFLAGS+=	-msse2
+CXXFLAGS_amd64=	-msse2
+CXXFLAGS_i386=	-msse2
 
 CMAKE_ARGS+=	-DPKG_LIB_DIR:STRING="share/uhd" -DUHD_TXRX_DEBUG_PRINTS="yes"
 # for excruciating debug use this -db

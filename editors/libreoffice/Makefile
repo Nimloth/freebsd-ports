@@ -12,6 +12,8 @@ EXTRACT_ONLY:=	${DISTFILES}
 
 COMMENT=	Full integrated office productivity suite
 
+CONFLICTS_BUILD=	mdds0
+
 BUILD_DEPENDS=	p5-Archive-Zip>=0:archivers/p5-Archive-Zip \
 		zip:archivers/zip \
 		${LOCALBASE}/include/sqlext.h:databases/unixODBC \
@@ -310,8 +312,8 @@ post-install-SDK-on:
 add-plist-gnome:
 .for subdir in gnome hicolor locolor
 	@${ECHO_CMD} "@rmtry share/icons/${subdir}/icon-theme.cache" >> ${TMPPLIST}
-	@${ECHO_CMD} "@exec ${LOCALBASE}/bin/gtk-update-icon-cache -q -f %D/share/icons/${subdir} 2>/dev/null || ${TRUE}" >> ${TMPPLIST}
-	@${ECHO_CMD} "@unexec ${LOCALBASE}/bin/gtk-update-icon-cache -q -f %D/share/icons/${subdir} 2>/dev/null || ${TRUE}" >> ${TMPPLIST}
+	@${ECHO_CMD} "@postexec ${LOCALBASE}/bin/gtk-update-icon-cache -q -f %D/share/icons/${subdir} 2>/dev/null || ${TRUE}" >> ${TMPPLIST}
+	@${ECHO_CMD} "@postunexec ${LOCALBASE}/bin/gtk-update-icon-cache -q -f %D/share/icons/${subdir} 2>/dev/null || ${TRUE}" >> ${TMPPLIST}
 .endfor
 
 .include <bsd.port.post.mk>

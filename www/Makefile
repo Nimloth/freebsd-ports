@@ -120,6 +120,7 @@
     SUBDIR += drraw
     SUBDIR += drupal7
     SUBDIR += drupal7-wysiwyg
+    SUBDIR += drupal8
     SUBDIR += drush
     SUBDIR += dtse
     SUBDIR += dummyflash
@@ -199,6 +200,7 @@
     SUBDIR += get_flash_videos
     SUBDIR += getleft
     SUBDIR += gist
+    SUBDIR += gitea
     SUBDIR += gitlab
     SUBDIR += gitlab-workhorse
     SUBDIR += glassfish
@@ -336,6 +338,10 @@
     SUBDIR += kannel-sqlbox
     SUBDIR += kcgi
     SUBDIR += kdewebdev4
+    SUBDIR += kf5-kdewebkit
+    SUBDIR += kf5-khtml
+    SUBDIR += kf5-kjs
+    SUBDIR += kf5-kjsembed
     SUBDIR += kohana
     SUBDIR += kpartsplugin
     SUBDIR += kplaylist
@@ -538,6 +544,8 @@
     SUBDIR += node
     SUBDIR += node012
     SUBDIR += node4
+    SUBDIR += node6
+    SUBDIR += node7
     SUBDIR += nostromo
     SUBDIR += npapi-vlc
     SUBDIR += npapi-xine
@@ -545,6 +553,7 @@
     SUBDIR += npm
     SUBDIR += npm012
     SUBDIR += npm2
+    SUBDIR += npm3
     SUBDIR += nspluginwrapper
     SUBDIR += obhttpd
     SUBDIR += ocaml-net
@@ -1254,6 +1263,7 @@
     SUBDIR += p5-WWW-DHL
     SUBDIR += p5-WWW-Dilbert
     SUBDIR += p5-WWW-Facebook-API
+    SUBDIR += p5-WWW-Form-UrlEncoded
     SUBDIR += p5-WWW-FreeProxy
     SUBDIR += p5-WWW-GitHub-Gist
     SUBDIR += p5-WWW-Google-Calculator

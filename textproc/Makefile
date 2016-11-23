@@ -92,6 +92,8 @@
     SUBDIR += consul-template
     SUBDIR += crimson
     SUBDIR += cs-aspell
+    SUBDIR += cs-hunspell
+    SUBDIR += cs-hyphen
     SUBDIR += cs-mythes
     SUBDIR += csb-aspell
     SUBDIR += csv2latex
@@ -360,6 +362,8 @@
     SUBDIR += jrefentry
     SUBDIR += jshon
     SUBDIR += kdiff3
+    SUBDIR += kf5-kcodecs
+    SUBDIR += kf5-sonnet
     SUBDIR += kenlm
     SUBDIR += kibana3
     SUBDIR += kibana41
@@ -1402,6 +1406,8 @@
     SUBDIR += rubygem-amatch
     SUBDIR += rubygem-asciidoctor
     SUBDIR += rubygem-autoprefixer-rails
+    SUBDIR += rubygem-babel-source
+    SUBDIR += rubygem-babel-transpiler
     SUBDIR += rubygem-babosa
     SUBDIR += rubygem-charlock_holmes
     SUBDIR += rubygem-coderay

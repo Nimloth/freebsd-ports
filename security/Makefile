@@ -279,13 +279,13 @@
     SUBDIR += keychain
     SUBDIR += keynote
     SUBDIR += keyprint
+    SUBDIR += kf5-kdesu
     SUBDIR += kgpg-kde4
     SUBDIR += knock
     SUBDIR += knocker
     SUBDIR += kpcli
     SUBDIR += kqoauth
     SUBDIR += krb5
-    SUBDIR += krb5-112
     SUBDIR += krb5-113
     SUBDIR += krb5-114
     SUBDIR += krb5-appl
@@ -603,6 +603,7 @@
     SUBDIR += p5-Dancer-Plugin-Passphrase
     SUBDIR += p5-Dancer2-Plugin-Auth-Extensible
     SUBDIR += p5-Dancer2-Plugin-Auth-Extensible-Provider-DBIC
+    SUBDIR += p5-Dancer2-Plugin-Auth-Extensible-Provider-IMAP
     SUBDIR += p5-Dancer2-Plugin-Auth-Extensible-Provider-Usergroup
     SUBDIR += p5-Dancer2-Plugin-Passphrase
     SUBDIR += p5-Data-Entropy

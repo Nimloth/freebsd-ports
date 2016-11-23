@@ -3,6 +3,7 @@
 
 PORTNAME=	innoextract
 PORTVERSION=	1.6
+PORTREVISION=	1
 CATEGORIES=	archivers
 MASTER_SITES=	http://constexpr.org/innoextract/files/
 
@@ -11,8 +12,6 @@ COMMENT=	Program to extract Inno Setup files
 
 LICENSE=	ZLIB
 LICENSE_FILE=	${WRKSRC}/LICENSE
-
-BROKEN_powerpc64=	Does not build
 
 LIB_DEPENDS=	libboost_iostreams.so:devel/boost-libs \
 		libboost_filesystem.so:devel/boost-libs \
@@ -24,5 +23,8 @@ CMAKE_ARGS=	-DCMAKE_INSTALL_MANDIR=man
 
 PLIST_FILES=	bin/innoextract \
 		man/man1/innoextract.1.gz
+
+BROKEN_powerpc64=	Does not build
+BROKEN_sparc64=		Does not build: undefined reference to std::ctype<char>::_M_widen_init()
 
 .include <bsd.port.mk>
